@@ -11,8 +11,8 @@ const ContactUsScreen = () => {
         <View style={styles.header}>
             <BackButton />
             <UserAvatar />
-            <SendButton />
         </View>
+        <SendButton />
     </View>
   )
 }
