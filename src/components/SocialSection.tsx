@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import SendButton from './SendButton'
 import SocialCircle from './SocialCircle'
-import { s } from 'react-native-size-matters'
+import { s, vs } from 'react-native-size-matters'
 
 const SocialSection = () => {
   return (
@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: "center", 
         borderBottomWidth: 1,
-        borderBottomColor: "#E4E6E8" 
+        borderBottomColor: "#E4E6E8",
+        paddingBottom: vs(15),
     },
 
     text: {
