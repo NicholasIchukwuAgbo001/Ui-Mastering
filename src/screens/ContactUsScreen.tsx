@@ -4,6 +4,7 @@ import UserAvatar from "../components/UserAvatar";
 import BackButton from "../components/BackButton";
 import { s, vs } from "react-native-size-matters";
 import SocialSection from "../components/SocialSection";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 const ContactUsScreen = () => {
   return (
@@ -17,11 +18,26 @@ const ContactUsScreen = () => {
 
       <View style={styles.socialContainer}>
         <Text style={styles.socialTitle}>Social Media Platform</Text>
-        <SocialSection />
-        <SocialSection />
-        <SocialSection />
-        <SocialSection />
-        <SocialSection />
+        <SocialSection
+          icon={<FontAwesome name="whatsapp" size={24} color="green" />}
+          title="WhatsApp"
+        />
+        <SocialSection
+          icon={<FontAwesome name="twitter" size={24} color="#1DA1F2" />}
+          title="X"
+        />
+        <SocialSection
+          icon={<FontAwesome name="instagram" size={24} color="#E1306C" />}
+          title="Instagram"
+        />
+        <SocialSection
+          icon={<FontAwesome name="snapchat-ghost" size={24} color="#FFFC00" />}
+          title="Snapchat"
+        />
+        <SocialSection
+          icon={<FontAwesome name="music" size={24} color="black" />}
+          title="TikTok"
+        />
       </View>
     </View>
   );
@@ -46,13 +62,13 @@ const styles = StyleSheet.create({
 
   socialTitle: {
     fontSize: s(16),
-    fontWeight: "semibold",
+    fontWeight: "600",
     paddingBottom: vs(10),
   },
 
   screenTitle: {
     fontSize: s(24),
-    fontWeight: "semibold",
+    fontWeight: "600",
     color: "blue",
     marginTop: vs(20),
     marginStart: s(19),

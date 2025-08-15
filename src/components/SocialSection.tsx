@@ -1,17 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import SendButton from './SendButton'
-import SocialCircle from './SocialCircle'
 import { s, vs } from 'react-native-size-matters'
 
-const SocialSection = () => {
+const SocialSection = ({title, icon}) => {
   return (
     <View style={styles.container}>
-        <SocialCircle />
+      <View style={styles.circle}>
+        {icon}
+       </View>
         <Text 
         style={styles.text}
         >
-        Whatsaap
+        {title}
         </Text>
         <SendButton />
     </View>
@@ -34,5 +35,16 @@ const styles = StyleSheet.create({
         flex: 1,  
         fontSize: 12,
         color: "#8083A3"
-    }
+    },
+
+    circle:{
+      width: 46,
+      height: 46,
+      borderRadius: 23,
+      backgroundColor: '#fff',
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderWidth: s(1),
+      borderColor: "#E4E6E8",
+  }
 })
