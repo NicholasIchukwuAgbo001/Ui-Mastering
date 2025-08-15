@@ -18,6 +18,10 @@ const ContactUsScreen = () => {
       <View style={styles.socialContainer}>
         <Text style={styles.socialTitle}>Social Media Platform</Text>
         <SocialSection />
+        <SocialSection />
+        <SocialSection />
+        <SocialSection />
+        <SocialSection />
       </View>
     </View>
   );
