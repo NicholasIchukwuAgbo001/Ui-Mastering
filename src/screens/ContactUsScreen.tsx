@@ -5,6 +5,7 @@ import BackButton from "../components/BackButton";
 import { s, vs } from "react-native-size-matters";
 import SocialSection from "../components/SocialSection";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 const ContactUsScreen = () => {
   return (
@@ -35,7 +36,7 @@ const ContactUsScreen = () => {
           title="Snapchat"
         />
         <SocialSection
-          icon={<FontAwesome name="music" size={24} color="black" />}
+          icon={<FontAwesome5 name="tiktok" size={24} color="black" />}
           title="TikTok"
         />
       </View>
